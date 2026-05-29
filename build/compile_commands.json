@@ -1,0 +1,32 @@
+[
+{
+  "directory": "/home/coldest/Documents/Programming/CPP/midiVisualizer2/build",
+  "command": "/usr/bin/clang++   -g -std=gnu++23 -I/usr/include -o CMakeFiles/midiVisualizer2.dir/src/MusicInstruments.cpp.o -c /home/coldest/Documents/Programming/CPP/midiVisualizer2/src/MusicInstruments.cpp",
+  "file": "/home/coldest/Documents/Programming/CPP/midiVisualizer2/src/MusicInstruments.cpp",
+  "output": "CMakeFiles/midiVisualizer2.dir/src/MusicInstruments.cpp.o"
+},
+{
+  "directory": "/home/coldest/Documents/Programming/CPP/midiVisualizer2/build",
+  "command": "/usr/bin/clang++   -g -std=gnu++23 -I/usr/include -o CMakeFiles/midiVisualizer2.dir/src/fluidsynthwrapper.cpp.o -c /home/coldest/Documents/Programming/CPP/midiVisualizer2/src/fluidsynthwrapper.cpp",
+  "file": "/home/coldest/Documents/Programming/CPP/midiVisualizer2/src/fluidsynthwrapper.cpp",
+  "output": "CMakeFiles/midiVisualizer2.dir/src/fluidsynthwrapper.cpp.o"
+},
+{
+  "directory": "/home/coldest/Documents/Programming/CPP/midiVisualizer2/build",
+  "command": "/usr/bin/clang++   -g -std=gnu++23 -I/usr/include -o CMakeFiles/midiVisualizer2.dir/src/main.cpp.o -c /home/coldest/Documents/Programming/CPP/midiVisualizer2/src/main.cpp",
+  "file": "/home/coldest/Documents/Programming/CPP/midiVisualizer2/src/main.cpp",
+  "output": "CMakeFiles/midiVisualizer2.dir/src/main.cpp.o"
+},
+{
+  "directory": "/home/coldest/Documents/Programming/CPP/midiVisualizer2/build",
+  "command": "/usr/bin/clang++   -g -std=gnu++23 -I/usr/include -o CMakeFiles/midiVisualizer2.dir/src/midiFile.cpp.o -c /home/coldest/Documents/Programming/CPP/midiVisualizer2/src/midiFile.cpp",
+  "file": "/home/coldest/Documents/Programming/CPP/midiVisualizer2/src/midiFile.cpp",
+  "output": "CMakeFiles/midiVisualizer2.dir/src/midiFile.cpp.o"
+},
+{
+  "directory": "/home/coldest/Documents/Programming/CPP/midiVisualizer2/build",
+  "command": "/usr/bin/clang++   -g -std=gnu++23 -I/usr/include -o CMakeFiles/midiVisualizer2.dir/src/piano.cpp.o -c /home/coldest/Documents/Programming/CPP/midiVisualizer2/src/piano.cpp",
+  "file": "/home/coldest/Documents/Programming/CPP/midiVisualizer2/src/piano.cpp",
+  "output": "CMakeFiles/midiVisualizer2.dir/src/piano.cpp.o"
+}
+]
