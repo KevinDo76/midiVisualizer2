@@ -25,6 +25,12 @@
 },
 {
   "directory": "/home/coldest/Documents/Programming/CPP/midiVisualizer2/build",
+  "command": "/usr/bin/clang++   -g -std=gnu++23 -I/usr/include -o CMakeFiles/midiVisualizer2.dir/src/midiPlayer.cpp.o -c /home/coldest/Documents/Programming/CPP/midiVisualizer2/src/midiPlayer.cpp",
+  "file": "/home/coldest/Documents/Programming/CPP/midiVisualizer2/src/midiPlayer.cpp",
+  "output": "CMakeFiles/midiVisualizer2.dir/src/midiPlayer.cpp.o"
+},
+{
+  "directory": "/home/coldest/Documents/Programming/CPP/midiVisualizer2/build",
   "command": "/usr/bin/clang++   -g -std=gnu++23 -I/usr/include -o CMakeFiles/midiVisualizer2.dir/src/piano.cpp.o -c /home/coldest/Documents/Programming/CPP/midiVisualizer2/src/piano.cpp",
   "file": "/home/coldest/Documents/Programming/CPP/midiVisualizer2/src/piano.cpp",
   "output": "CMakeFiles/midiVisualizer2.dir/src/piano.cpp.o"

@@ -6,6 +6,7 @@ midiVisualizer2: \
   CMakeFiles/midiVisualizer2.dir/src/fluidsynthwrapper.cpp.o \
   CMakeFiles/midiVisualizer2.dir/src/main.cpp.o \
   CMakeFiles/midiVisualizer2.dir/src/midiFile.cpp.o \
+  CMakeFiles/midiVisualizer2.dir/src/midiPlayer.cpp.o \
   CMakeFiles/midiVisualizer2.dir/src/piano.cpp.o \
   /usr/lib64/libfluidsynth.so.3.5.3 \
   /usr/lib64/libraylib.so \
@@ -77,6 +78,8 @@ CMakeFiles/midiVisualizer2.dir/src/fluidsynthwrapper.cpp.o:
 CMakeFiles/midiVisualizer2.dir/src/main.cpp.o:
 
 CMakeFiles/midiVisualizer2.dir/src/midiFile.cpp.o:
+
+CMakeFiles/midiVisualizer2.dir/src/midiPlayer.cpp.o:
 
 CMakeFiles/midiVisualizer2.dir/src/piano.cpp.o:
 

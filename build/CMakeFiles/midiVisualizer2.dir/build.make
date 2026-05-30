@@ -128,10 +128,24 @@ CMakeFiles/midiVisualizer2.dir/src/midiFile.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/midiVisualizer2.dir/src/midiFile.cpp.s"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/coldest/Documents/Programming/CPP/midiVisualizer2/src/midiFile.cpp -o CMakeFiles/midiVisualizer2.dir/src/midiFile.cpp.s
 
+CMakeFiles/midiVisualizer2.dir/src/midiPlayer.cpp.o: CMakeFiles/midiVisualizer2.dir/flags.make
+CMakeFiles/midiVisualizer2.dir/src/midiPlayer.cpp.o: /home/coldest/Documents/Programming/CPP/midiVisualizer2/src/midiPlayer.cpp
+CMakeFiles/midiVisualizer2.dir/src/midiPlayer.cpp.o: CMakeFiles/midiVisualizer2.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/coldest/Documents/Programming/CPP/midiVisualizer2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/midiVisualizer2.dir/src/midiPlayer.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/midiVisualizer2.dir/src/midiPlayer.cpp.o -MF CMakeFiles/midiVisualizer2.dir/src/midiPlayer.cpp.o.d -o CMakeFiles/midiVisualizer2.dir/src/midiPlayer.cpp.o -c /home/coldest/Documents/Programming/CPP/midiVisualizer2/src/midiPlayer.cpp
+
+CMakeFiles/midiVisualizer2.dir/src/midiPlayer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/midiVisualizer2.dir/src/midiPlayer.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/coldest/Documents/Programming/CPP/midiVisualizer2/src/midiPlayer.cpp > CMakeFiles/midiVisualizer2.dir/src/midiPlayer.cpp.i
+
+CMakeFiles/midiVisualizer2.dir/src/midiPlayer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/midiVisualizer2.dir/src/midiPlayer.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/coldest/Documents/Programming/CPP/midiVisualizer2/src/midiPlayer.cpp -o CMakeFiles/midiVisualizer2.dir/src/midiPlayer.cpp.s
+
 CMakeFiles/midiVisualizer2.dir/src/piano.cpp.o: CMakeFiles/midiVisualizer2.dir/flags.make
 CMakeFiles/midiVisualizer2.dir/src/piano.cpp.o: /home/coldest/Documents/Programming/CPP/midiVisualizer2/src/piano.cpp
 CMakeFiles/midiVisualizer2.dir/src/piano.cpp.o: CMakeFiles/midiVisualizer2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/coldest/Documents/Programming/CPP/midiVisualizer2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/midiVisualizer2.dir/src/piano.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/coldest/Documents/Programming/CPP/midiVisualizer2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/midiVisualizer2.dir/src/piano.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/midiVisualizer2.dir/src/piano.cpp.o -MF CMakeFiles/midiVisualizer2.dir/src/piano.cpp.o.d -o CMakeFiles/midiVisualizer2.dir/src/piano.cpp.o -c /home/coldest/Documents/Programming/CPP/midiVisualizer2/src/piano.cpp
 
 CMakeFiles/midiVisualizer2.dir/src/piano.cpp.i: cmake_force
@@ -148,6 +162,7 @@ midiVisualizer2_OBJECTS = \
 "CMakeFiles/midiVisualizer2.dir/src/fluidsynthwrapper.cpp.o" \
 "CMakeFiles/midiVisualizer2.dir/src/main.cpp.o" \
 "CMakeFiles/midiVisualizer2.dir/src/midiFile.cpp.o" \
+"CMakeFiles/midiVisualizer2.dir/src/midiPlayer.cpp.o" \
 "CMakeFiles/midiVisualizer2.dir/src/piano.cpp.o"
 
 # External object files for target midiVisualizer2
@@ -157,13 +172,14 @@ midiVisualizer2: CMakeFiles/midiVisualizer2.dir/src/MusicInstruments.cpp.o
 midiVisualizer2: CMakeFiles/midiVisualizer2.dir/src/fluidsynthwrapper.cpp.o
 midiVisualizer2: CMakeFiles/midiVisualizer2.dir/src/main.cpp.o
 midiVisualizer2: CMakeFiles/midiVisualizer2.dir/src/midiFile.cpp.o
+midiVisualizer2: CMakeFiles/midiVisualizer2.dir/src/midiPlayer.cpp.o
 midiVisualizer2: CMakeFiles/midiVisualizer2.dir/src/piano.cpp.o
 midiVisualizer2: CMakeFiles/midiVisualizer2.dir/build.make
 midiVisualizer2: CMakeFiles/midiVisualizer2.dir/compiler_depend.ts
 midiVisualizer2: /usr/lib64/libfluidsynth.so.3.5.3
 midiVisualizer2: /usr/lib64/libraylib.so
 midiVisualizer2: CMakeFiles/midiVisualizer2.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/coldest/Documents/Programming/CPP/midiVisualizer2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable midiVisualizer2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/coldest/Documents/Programming/CPP/midiVisualizer2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable midiVisualizer2"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/midiVisualizer2.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

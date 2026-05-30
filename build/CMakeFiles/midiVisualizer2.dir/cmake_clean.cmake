@@ -8,6 +8,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/midiVisualizer2.dir/src/main.cpp.o.d"
   "CMakeFiles/midiVisualizer2.dir/src/midiFile.cpp.o"
   "CMakeFiles/midiVisualizer2.dir/src/midiFile.cpp.o.d"
+  "CMakeFiles/midiVisualizer2.dir/src/midiPlayer.cpp.o"
+  "CMakeFiles/midiVisualizer2.dir/src/midiPlayer.cpp.o.d"
   "CMakeFiles/midiVisualizer2.dir/src/piano.cpp.o"
   "CMakeFiles/midiVisualizer2.dir/src/piano.cpp.o.d"
   "midiVisualizer2"

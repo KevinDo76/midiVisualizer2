@@ -7,8 +7,6 @@
 #include <array>
 #include <cstdint>
 #include <iostream>
-#include <fluidsynth.h>
-#include "MusicInstruments.h"
 
 void createMidiEvent(std::vector<midiEvent>& currTrack, uint32_t timeDelta, uint32_t absoluteTick,
                      midiFile::midiEventName eventType = midiFile::midiEventName::noteOff, 
@@ -80,74 +78,9 @@ std::string midiFile::readString(std::ifstream &inputMidi, uint32_t length)
     return result;
 }
 
-void midiFile::play()
-{
-    messagePointer = 0;
-    startTime = std::chrono::high_resolution_clock::now();
-    playing = true;
-}
-
-void midiFile::updatePlayback(FluidSynthObj& fluid, MusicInstruments& instruments)
-{
-    if (!playing)
-    {
-        return;
-    }
-
-
-    double timeElapsed = std::chrono::duration<double>(std::chrono::high_resolution_clock::now() - startTime).count();
-    while (messagePointer<unifiedEvents.size() && timeElapsed>=unifiedEvents[messagePointer].absoluteTime && true)
-    {
-        std::cout<<unifiedEvents[messagePointer].deltaTime<<" tick\n";
-        if (unifiedEvents[messagePointer].isMidiEvent && unifiedEvents[messagePointer].eventType == midiFile::midiEventName::noteOn)
-        {
-            //if (channelUtilization[unifiedEvents[messagePointer].channel].currentProgram>=8)
-            //{
-            //    messagePointer+=1;
-            //    continue;
-            //}
-            //std::cout<<(int)channelUtilization[unifiedEvents[messagePointer].channel].currentProgram<<"\n";
-            //std::cout<<(int)unifiedEvents[messagePointer].noteIndex<<" "<<timeElapsed<<"s\n";
-            fluid_synth_noteon(fluid.synth, unifiedEvents[messagePointer].channel, unifiedEvents[messagePointer].noteIndex, unifiedEvents[messagePointer].velocity);
-        } else if (unifiedEvents[messagePointer].isMidiEvent && unifiedEvents[messagePointer].eventType == midiFile::midiEventName::noteOff)
-        {
-            //if (channelUtilization[unifiedEvents[messagePointer].channel].currentProgram>=8)
-            //{
-            //    messagePointer+=1;
-            //    continue;
-            //}
-            fluid_synth_noteoff(fluid.synth, unifiedEvents[messagePointer].channel, unifiedEvents[messagePointer].noteIndex);
-        } else if (unifiedEvents[messagePointer].isMidiEvent && unifiedEvents[messagePointer].eventType == midiFile::midiEventName::channelPressure)
-        {
-            //std::cout<<"pressure\n";
-            fluid_synth_channel_pressure(fluid.synth, unifiedEvents[messagePointer].channel, unifiedEvents[messagePointer].pressure);
-        } else if (unifiedEvents[messagePointer].isMidiEvent && unifiedEvents[messagePointer].eventType == midiFile::midiEventName::programChange)
-        {
-            //std::cout<<"program\n";
-            fluid_synth_program_change(fluid.synth, unifiedEvents[messagePointer].channel, unifiedEvents[messagePointer].program);
-            channelUtilization[unifiedEvents[messagePointer].channel].currentProgram = unifiedEvents[messagePointer].program;
-        } else if (unifiedEvents[messagePointer].isMidiEvent && unifiedEvents[messagePointer].eventType == midiFile::midiEventName::pitchBend) {
-            //std::cout<<"pitch\n";
-            fluid_synth_pitch_bend(fluid.synth, unifiedEvents[messagePointer].channel, unifiedEvents[messagePointer].pitchValue);
-        }  else if (unifiedEvents[messagePointer].isMidiEvent && unifiedEvents[messagePointer].eventType == midiFile::midiEventName::controlChange)
-        {
-            //std::cout<<"controller\n";
-            fluid_synth_cc(fluid.synth, unifiedEvents[messagePointer].channel, unifiedEvents[messagePointer].controller, unifiedEvents[messagePointer].controllerValue);
-        }
-        instruments.updateInstruments(unifiedEvents[messagePointer], *this);
-        messagePointer+=1;
-    }
-    if (messagePointer==unifiedEvents.size())
-    {
-        std::cout<<"end\n";
-        messagePointer+=1;
-        playing = false;
-    }
-}
 
 midiFile::midiFile(std::string filePath)
 {
-    playing = false;
     std::ifstream inputMidi(filePath, std::ios::binary);
 
     if (!inputMidi.is_open())

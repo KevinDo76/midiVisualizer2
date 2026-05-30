@@ -8,6 +8,7 @@ set(OLD_GLOB
   "/home/coldest/Documents/Programming/CPP/midiVisualizer2/src/fluidsynthwrapper.cpp"
   "/home/coldest/Documents/Programming/CPP/midiVisualizer2/src/main.cpp"
   "/home/coldest/Documents/Programming/CPP/midiVisualizer2/src/midiFile.cpp"
+  "/home/coldest/Documents/Programming/CPP/midiVisualizer2/src/midiPlayer.cpp"
   "/home/coldest/Documents/Programming/CPP/midiVisualizer2/src/piano.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
@@ -37,6 +38,7 @@ set(OLD_GLOB
   "/home/coldest/Documents/Programming/CPP/midiVisualizer2/src/MusicInstruments.h"
   "/home/coldest/Documents/Programming/CPP/midiVisualizer2/src/fluidsynthwrapper.h"
   "/home/coldest/Documents/Programming/CPP/midiVisualizer2/src/midiFile.h"
+  "/home/coldest/Documents/Programming/CPP/midiVisualizer2/src/midiPlayer.h"
   "/home/coldest/Documents/Programming/CPP/midiVisualizer2/src/piano.h"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")

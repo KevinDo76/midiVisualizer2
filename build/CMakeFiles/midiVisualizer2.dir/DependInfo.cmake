@@ -12,6 +12,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/coldest/Documents/Programming/CPP/midiVisualizer2/src/fluidsynthwrapper.cpp" "CMakeFiles/midiVisualizer2.dir/src/fluidsynthwrapper.cpp.o" "gcc" "CMakeFiles/midiVisualizer2.dir/src/fluidsynthwrapper.cpp.o.d"
   "/home/coldest/Documents/Programming/CPP/midiVisualizer2/src/main.cpp" "CMakeFiles/midiVisualizer2.dir/src/main.cpp.o" "gcc" "CMakeFiles/midiVisualizer2.dir/src/main.cpp.o.d"
   "/home/coldest/Documents/Programming/CPP/midiVisualizer2/src/midiFile.cpp" "CMakeFiles/midiVisualizer2.dir/src/midiFile.cpp.o" "gcc" "CMakeFiles/midiVisualizer2.dir/src/midiFile.cpp.o.d"
+  "/home/coldest/Documents/Programming/CPP/midiVisualizer2/src/midiPlayer.cpp" "CMakeFiles/midiVisualizer2.dir/src/midiPlayer.cpp.o" "gcc" "CMakeFiles/midiVisualizer2.dir/src/midiPlayer.cpp.o.d"
   "/home/coldest/Documents/Programming/CPP/midiVisualizer2/src/piano.cpp" "CMakeFiles/midiVisualizer2.dir/src/piano.cpp.o" "gcc" "CMakeFiles/midiVisualizer2.dir/src/piano.cpp.o.d"
   "" "midiVisualizer2" "gcc" "CMakeFiles/midiVisualizer2.dir/link.d"
   )

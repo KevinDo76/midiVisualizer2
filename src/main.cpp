@@ -4,6 +4,7 @@
 #include <fluidsynth.h>
 #include "fluidsynthwrapper.h"
 #include "MusicInstruments.h"
+#include "midiPlayer.h"
 #include "piano.h"
 #include <chrono>
 #include <thread>
@@ -24,13 +25,14 @@ int main(int, char**){
     camera.projection = CAMERA_PERSPECTIVE;             // Camera projection type
     
     bool mouseCaptured = false;
-    midiFile file("assets/ieva.mid");
+    midiFile file("assets/lullaby.mid");
+    MidiPlayer player(file);
     FluidSynthObj fluid;
     uint32_t currentPointer = 0;
 
     MusicInstruments instruments;
 
-    file.play();
+    player.play();
 
     //DisableCursor();
 
@@ -41,7 +43,7 @@ int main(int, char**){
         if (IsKeyPressed(KEY_X)) {EnableCursor(); mouseCaptured=false;}
         std::this_thread::sleep_for(std::chrono::microseconds(200));
 
-        file.updatePlayback(fluid, instruments);
+        player.updatePlayback(fluid, instruments);
         
         BeginDrawing();
         ClearBackground(GRAY);

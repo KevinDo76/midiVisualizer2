@@ -4,8 +4,6 @@
 #include <vector>
 #include <array>
 #include <chrono>
-#include "fluidsynthwrapper.h"
-//#include "MusicInstruments.h"
 
 class MusicInstruments;
 
@@ -40,12 +38,12 @@ public:
     std::array<midiChannelMeta, 16> channelUtilization;
     std::vector<uint8_t> programUsed;
 
-    uint32_t messagePointer;
-    std::chrono::_V2::system_clock::time_point startTime;
-    bool playing;
-    void play();
-
-    void updatePlayback(FluidSynthObj& fluid, MusicInstruments& instruments);
+    //uint32_t messagePointer;
+    //std::chrono::_V2::system_clock::time_point startTime;
+    //bool playing;
+    //void play();
+//
+    //void updatePlayback(FluidSynthObj& fluid, MusicInstruments& instruments);
 
     enum midiEventName : uint8_t
     {

@@ -236,16 +236,6 @@ CMakeFiles/midiVisualizer2.dir/src/MusicInstruments.cpp.o: \
   /usr/bin/../lib/gcc/x86_64-redhat-linux/16/../../../../include/c++/16/ext/concurrence.h \
   /usr/bin/../lib/gcc/x86_64-redhat-linux/16/../../../../include/c++/16/bits/align.h \
   /usr/bin/../lib/gcc/x86_64-redhat-linux/16/../../../../include/c++/16/bits/chrono_io.h \
-  /home/coldest/Documents/Programming/CPP/midiVisualizer2/src/fluidsynthwrapper.h \
-  /usr/include/fluidsynth.h /usr/include/fluidsynth/types.h \
-  /usr/include/fluidsynth/settings.h /usr/include/fluidsynth/synth.h \
-  /usr/include/fluidsynth/shell.h /usr/include/fluidsynth/sfont.h \
-  /usr/include/fluidsynth/audio.h /usr/include/fluidsynth/event.h \
-  /usr/include/fluidsynth/midi.h /usr/include/fluidsynth/seq.h \
-  /usr/include/fluidsynth/seqbind.h /usr/include/fluidsynth/log.h \
-  /usr/include/fluidsynth/misc.h /usr/include/fluidsynth/mod.h \
-  /usr/include/fluidsynth/gen.h /usr/include/fluidsynth/voice.h \
-  /usr/include/fluidsynth/version.h /usr/include/fluidsynth/ladspa.h \
   /usr/include/raylib.h \
   /usr/bin/../lib/clang/22/include/__stdarg_header_macro.h \
   /usr/bin/../lib/clang/22/include/__stdarg_va_list.h \

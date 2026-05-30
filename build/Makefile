@@ -226,6 +226,30 @@ src/midiFile.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/midiVisualizer2.dir/build.make CMakeFiles/midiVisualizer2.dir/src/midiFile.cpp.s
 .PHONY : src/midiFile.cpp.s
 
+src/midiPlayer.o: src/midiPlayer.cpp.o
+.PHONY : src/midiPlayer.o
+
+# target to build an object file
+src/midiPlayer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/midiVisualizer2.dir/build.make CMakeFiles/midiVisualizer2.dir/src/midiPlayer.cpp.o
+.PHONY : src/midiPlayer.cpp.o
+
+src/midiPlayer.i: src/midiPlayer.cpp.i
+.PHONY : src/midiPlayer.i
+
+# target to preprocess a source file
+src/midiPlayer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/midiVisualizer2.dir/build.make CMakeFiles/midiVisualizer2.dir/src/midiPlayer.cpp.i
+.PHONY : src/midiPlayer.cpp.i
+
+src/midiPlayer.s: src/midiPlayer.cpp.s
+.PHONY : src/midiPlayer.s
+
+# target to generate assembly for a file
+src/midiPlayer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/midiVisualizer2.dir/build.make CMakeFiles/midiVisualizer2.dir/src/midiPlayer.cpp.s
+.PHONY : src/midiPlayer.cpp.s
+
 src/piano.o: src/piano.cpp.o
 .PHONY : src/piano.o
 
@@ -271,6 +295,9 @@ help:
 	@echo "... src/midiFile.o"
 	@echo "... src/midiFile.i"
 	@echo "... src/midiFile.s"
+	@echo "... src/midiPlayer.o"
+	@echo "... src/midiPlayer.i"
+	@echo "... src/midiPlayer.s"
 	@echo "... src/piano.o"
 	@echo "... src/piano.i"
 	@echo "... src/piano.s"

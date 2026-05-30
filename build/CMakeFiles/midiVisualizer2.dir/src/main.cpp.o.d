@@ -235,7 +235,12 @@ CMakeFiles/midiVisualizer2.dir/src/main.cpp.o: \
   /usr/bin/../lib/gcc/x86_64-redhat-linux/16/../../../../include/c++/16/ext/concurrence.h \
   /usr/bin/../lib/gcc/x86_64-redhat-linux/16/../../../../include/c++/16/bits/align.h \
   /usr/bin/../lib/gcc/x86_64-redhat-linux/16/../../../../include/c++/16/bits/chrono_io.h \
-  /home/coldest/Documents/Programming/CPP/midiVisualizer2/src/fluidsynthwrapper.h \
+  /usr/include/raylib.h \
+  /usr/bin/../lib/clang/22/include/__stdarg_header_macro.h \
+  /usr/bin/../lib/clang/22/include/__stdarg_va_list.h \
+  /usr/bin/../lib/clang/22/include/__stdarg_va_arg.h \
+  /usr/bin/../lib/clang/22/include/__stdarg___va_copy.h \
+  /usr/bin/../lib/clang/22/include/__stdarg_va_copy.h \
   /usr/include/fluidsynth.h /usr/include/fluidsynth/types.h \
   /usr/include/fluidsynth/settings.h /usr/include/fluidsynth/synth.h \
   /usr/include/fluidsynth/shell.h /usr/include/fluidsynth/sfont.h \
@@ -245,14 +250,10 @@ CMakeFiles/midiVisualizer2.dir/src/main.cpp.o: \
   /usr/include/fluidsynth/misc.h /usr/include/fluidsynth/mod.h \
   /usr/include/fluidsynth/gen.h /usr/include/fluidsynth/voice.h \
   /usr/include/fluidsynth/version.h /usr/include/fluidsynth/ladspa.h \
-  /usr/include/raylib.h \
-  /usr/bin/../lib/clang/22/include/__stdarg_header_macro.h \
-  /usr/bin/../lib/clang/22/include/__stdarg_va_list.h \
-  /usr/bin/../lib/clang/22/include/__stdarg_va_arg.h \
-  /usr/bin/../lib/clang/22/include/__stdarg___va_copy.h \
-  /usr/bin/../lib/clang/22/include/__stdarg_va_copy.h \
+  /home/coldest/Documents/Programming/CPP/midiVisualizer2/src/fluidsynthwrapper.h \
   /home/coldest/Documents/Programming/CPP/midiVisualizer2/src/MusicInstruments.h \
   /home/coldest/Documents/Programming/CPP/midiVisualizer2/src/piano.h \
+  /home/coldest/Documents/Programming/CPP/midiVisualizer2/src/midiPlayer.h \
   /usr/bin/../lib/gcc/x86_64-redhat-linux/16/../../../../include/c++/16/thread \
   /usr/bin/../lib/gcc/x86_64-redhat-linux/16/../../../../include/c++/16/stop_token \
   /usr/bin/../lib/gcc/x86_64-redhat-linux/16/../../../../include/c++/16/atomic \
