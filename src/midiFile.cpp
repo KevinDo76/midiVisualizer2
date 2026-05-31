@@ -1,12 +1,19 @@
 #include "midiFile.h"
 #include <fstream>
-#include <byteswap.h>
 #include <algorithm>
 #include <bit>
 #include <exception>
 #include <array>
 #include <cstdint>
 #include <iostream>
+#if defined(_WIN32) || defined(_MSC_VER)
+    #include <stdlib.h>
+    #define bswap_16(x) _byteswap_ushort(x)
+    #define bswap_32(x) _byteswap_ulong(x)
+    #define bswap_64(x) _byteswap_uint64(x)
+#else
+    #include <byteswap.h>
+#endif
 
 void createMidiEvent(std::vector<midiEvent>& currTrack, uint32_t timeDelta, uint32_t absoluteTick,
                      midiFile::midiEventName eventType = midiFile::midiEventName::noteOff, 
