@@ -34,9 +34,7 @@ int main(int, char**){
 
     player.play();
 
-    //DisableCursor();
 
-    //fluid_player_play(fluid.player);
     auto start = std::chrono::high_resolution_clock::now();
     while (!WindowShouldClose()) {
         if (IsKeyPressed(KEY_Z)) {DisableCursor(); mouseCaptured=true;}

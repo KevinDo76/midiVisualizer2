@@ -360,7 +360,7 @@ midiFile::midiFile(std::string filePath)
     {
         uint32_t deltaTick = unifiedEvents[i].absoluteTick - previousTick;
         double deltaSecond = (deltaTick * Tempo) / (division * 1000000.0);
-
+        std::cout<<deltaSecond<<"s\n";
         currentTime+=deltaSecond;
         unifiedEvents[i].absoluteTime = currentTime;
 
